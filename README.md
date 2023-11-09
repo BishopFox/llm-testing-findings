@@ -30,17 +30,7 @@ Contributions are welcome and encouraged! To contribute:
 2. **Modify or Add Templates**: Make changes to existing templates or create new ones that could benefit the community.
 3. **Create a Pull Request**: Propose your changes through a pull request, and provide a summary of your modifications or additions.
 4. **Await Review**: Allow time for the project maintainers to review and merge your contributions.
-- **Feedback and Discussions:** Join our [Discussions](https://github.com/BishopFox/llm-testing-findings/discussions) forum to share your thoughts or ask questions.
-
-## Community and Support
-
-- **Discussions:** Join the conversation in our [GitHub Discussions](https://github.com/BishopFox/llm-testing-findings/discussions).
-- **Social Media:** Follow us on [Twitter](#https://twitter.com/bishopfox) and [LinkedIn](#https://www.linkedin.com/company/bishop-fox/) for the latest updates.
-- **Blog:** Dive deeper into our findings on our [official blog](#https://bishopfox.com/blog).
-
-## License
-
-This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
+5. **Feedback and Discussions:** Join our [Discussions](https://github.com/BishopFox/llm-testing-findings/discussions) forum to share your thoughts or ask questions.
 
 ## Acknowledgements
 
@@ -55,11 +45,16 @@ For any additional questions or information, please email us at [contact@bishopf
 
 All templates in this repository are provided under the [MIT License](LICENSE.md). Your contributions are assumed to be under the same license.
 
-## Support
+
+## Community and Support
 
 Questions, comments, or need assistance? Open an issue in this repository, and a maintainer will assist you.
 
 Thank you for your contributions to enhancing the security and usability of LLM integrations and applications.
+
+- **Discussions:** Join the conversation in our [GitHub Discussions](https://github.com/BishopFox/llm-testing-findings/discussions).
+- **Social Media:** Follow us on [Twitter](#https://twitter.com/bishopfox) and [LinkedIn](#https://www.linkedin.com/company/bishop-fox/) for the latest updates.
+- **Blog:** Dive deeper into our findings on our [official blog](#https://bishopfox.com/blog).
 
 ---
 *This project is maintained by Rob Ragan [rragan@bishopfox.com](mailto:rragan@bishopfox.com) & the awesome team of passionate hackers at Bishop Fox. Committed to excellence in LLM integration security and usability.*
