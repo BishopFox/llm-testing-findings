@@ -6,31 +6,55 @@
     <title>🦊 LLM Testing Findings</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        /* Custom 8-bit styles */
         @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        body {
+            background-color: #121212; /* Dark background */
+            color: #E0E0E0; /* Light text */
+        }
         .pixel-font {
             font-family: 'Press Start 2P', cursive;
         }
         .description {
             margin-top: 4px;
-            font-size: 0.75rem; /* Adjust size as needed */
+            font-size: 0.75rem;
+            color: #BDBDBD; /* Slightly dimmer text for descriptions */
         }
-        .dark-mode-toggle {
-            cursor: pointer;
+        a {
+            color: #BB86FC; /* Purple links for contrast */
+        }
+        .container {
+            max-width: 800px; /* Adjust container width if necessary */
+            margin: 0 auto;
+            padding: 20px;
+        }
+        ul {
+            list-style-type: none; /* Remove bullet points */
+        }
+        li {
+            border-bottom: 1px solid #333; /* Add a subtle separator */
+            padding-bottom: 10px; /* Space out list items */
+            margin-bottom: 10px;
         }
     </style>
 </head>
-<body class="dark:bg-black bg-gray-200 text-green-400 dark:text-green-500">
+<body>
 
-<div class="container mx-auto px-4">
+<div class="container">
     <h1 class="text-4xl pixel-font text-center my-8">LLM Testing Findings</h1>
 
-    <div class="text-center mb-8">
-        <button id="toggleDarkMode" class="px-4 py-2 bg-gray-800 text-white rounded pixel-font dark-mode-toggle">Toggle Dark Mode</button>
-    </div>
-
     <ul class="list-none">
-        <!-- Findings with descriptions -->
+        <li class="mb-4">
+            <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/Authorization_Bypass_User_Controlled.md" class="pixel-font">Authorization Bypass through User Controlled Parameter</a>
+            <p class="description">Discusses vulnerabilities where authorization can be bypassed through parameters controlled by the user.</p>
+        </li>
+        <li class="mb-4">
+            <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/Data_Leakage.md" class="pixel-font">Data Leakage</a>
+            <p class="description">Addresses the potential for sensitive data to be unintentionally exposed or accessed.</p>
+        </li>
+        <li class="mb-4">
+            <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/Data_Poisoning.md" class="pixel-font">Data Poisoning</a>
+            <p class="description">Explores vulnerabilities related to malicious alterations of training data to compromise a model.</p>
+        </li>
         <li class="mb-4">
             <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/Improper_IAM_Models.md" class="pixel-font">Improper IAM Models</a>
             <p class="description">Highlights the risks and vulnerabilities associated with improper implementation of Identity and Access Management models.</p>
@@ -39,8 +63,46 @@
             <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/Inadequate_Anomaly_Detection.md" class="pixel-font">Inadequate Anomaly Detection</a>
             <p class="description">Sheds light on the shortcomings of anomaly detection systems in identifying unusual or suspicious behavior effectively.</p>
         </li>
-        <!-- Add more findings following the pattern above -->
-
+        <li class="mb-4">
+            <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/Inadequate_DR_Plan.md" class="pixel-font">Inadequate DR Plan</a>
+            <p class="description">Discusses the consequences and risks of having an inadequate Disaster Recovery plan for LLM systems.</p>
+        </li>
+        <li class="mb-4">
+            <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/Inadequate_ML_Grounding.md" class="pixel-font">Inadequate ML Grounding</a>
+            <p class="description">Points out the issues with insufficient grounding or baseline understanding in machine learning applications.</p>
+        </li>
+        <li class="mb-4">
+            <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/Insecure_Model_Arch.md" class="pixel-font">Insecure Model Arch</a>
+            <p class="description">Focuses on vulnerabilities due to insecure architectural designs in LLM models.</p>
+        </li>
+        <li class="mb-4">
+            <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/Insufficient_Input_Validation.md" class="pixel-font">Insufficient Input Validation</a>
+            <p class="description">Details the dangers of not adequately validating inputs, leading to potential security and operational risks.</p>
+        </li>
+        <li class="mb-4">
+            <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/Insufficient_Logging_MLOps.md" class="pixel-font">Insufficient Logging MLOps</a>
+            <p class="description">Highlights the deficiencies in logging practices within Machine Learning Operations, impacting monitoring and auditing capabilities.</p>
+        </li>
+        <li class="mb-4">
+            <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/Insufficient_Output_Sanitization_Content_Filtering.md" class="pixel-font">Insufficient Output Sanitization Content Filtering</a>
+            <p class="description">Discusses the lack of proper output sanitization and content filtering, leading to potential exposure of inappropriate or harmful content.</p>
+        </li>
+        <li class="mb-4">
+            <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/Lacking_Env_Segmentation_Gap_MLOps.md" class="pixel-font">Lacking Env Segmentation Gap MLOps</a>
+            <p class="description">Points out the risks associated with insufficient environmental segmentation in MLOps practices.</p>
+        </li>
+        <li class="mb-4">
+            <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/Lacking_Output_Disclaimer.md" class="pixel-font">Lacking Output Disclaimer</a>
+            <p class="description">Addresses the importance of including disclaimers for outputs to manage expectations and clarify limitations.</p>
+        </li>
+        <li class="mb-4">
+            <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/Lacking_Rate_Limiting.md" class="pixel-font">Lacking Rate Limiting</a>
+            <p class="description">Discusses the security and performance implications of not implementing rate limiting controls.</p>
+        </li>
+        <li class="mb-4">
+            <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/Lacking_User_Feedback_Mechanism.md" class="pixel-font">Lacking User Feedback Mechanism</a>
+            <p class="description">Highlights the drawbacks of not having mechanisms for users to provide feedback on LLM applications.</p>
+        </li>
         <li class="mb-4">
             <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/Prompt_Injection.md" class="pixel-font">Prompt Injection</a>
             <p class="description">Explores the security vulnerabilities associated with prompt injection attacks, where malicious inputs can manipulate model behavior.</p>
@@ -56,11 +118,5 @@
     </ul>
 </div>
 
-<script>
-    // Toggle dark mode
-    document.getElementById('toggleDarkMode').addEventListener('click', function () {
-        document.body.classList.toggle('dark');
-    });
-</script>
 </body>
 </html>
