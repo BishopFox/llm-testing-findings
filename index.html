@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🦊 LLM Testing Findings</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom 8-bit styles */
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        .pixel-font {
+            font-family: 'Press Start 2P', cursive;
+        }
+        .description {
+            margin-top: 4px;
+            font-size: 0.75rem; /* Adjust size as needed */
+        }
+        .dark-mode-toggle {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="dark:bg-black bg-gray-200 text-green-400 dark:text-green-500">
+
+<div class="container mx-auto px-4">
+    <h1 class="text-4xl pixel-font text-center my-8">LLM Testing Findings</h1>
+
+    <div class="text-center mb-8">
+        <button id="toggleDarkMode" class="px-4 py-2 bg-gray-800 text-white rounded pixel-font dark-mode-toggle">Toggle Dark Mode</button>
+    </div>
+
+    <ul class="list-none">
+        <!-- Findings with descriptions -->
+        <li class="mb-4">
+            <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/Improper_IAM_Models.md" class="pixel-font">Improper IAM Models</a>
+            <p class="description">Highlights the risks and vulnerabilities associated with improper implementation of Identity and Access Management models.</p>
+        </li>
+        <li class="mb-4">
+            <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/Inadequate_Anomaly_Detection.md" class="pixel-font">Inadequate Anomaly Detection</a>
+            <p class="description">Sheds light on the shortcomings of anomaly detection systems in identifying unusual or suspicious behavior effectively.</p>
+        </li>
+        <!-- Add more findings following the pattern above -->
+
+        <li class="mb-4">
+            <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/Prompt_Injection.md" class="pixel-font">Prompt Injection</a>
+            <p class="description">Explores the security vulnerabilities associated with prompt injection attacks, where malicious inputs can manipulate model behavior.</p>
+        </li>
+        <li class="mb-4">
+            <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/Unrestricted_Task_Execution.md" class="pixel-font">Unrestricted Task Execution</a>
+            <p class="description">Discusses the risks and potential consequences of allowing unrestricted task execution within LLM applications.</p>
+        </li>
+        <li class="mb-4">
+            <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/Violation_Differential_Privacy.md" class="pixel-font">Violation Differential Privacy</a>
+            <p class="description">Addresses issues related to the violation of differential privacy principles, compromising individual data privacy.</p>
+        </li>
+    </ul>
+</div>
+
+<script>
+    // Toggle dark mode
+    document.getElementById('toggleDarkMode').addEventListener('click', function () {
+        document.body.classList.toggle('dark');
+    });
+</script>
+</body>
+</html>
